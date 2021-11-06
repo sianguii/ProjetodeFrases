@@ -1,6 +1,10 @@
 package com.example.affirmationss.model
 
-data class Affirmation(val stringResourceId: Int){
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+// dados sendo solicitado no : res > valuees > string.xml
+data class Affirmation(@StringRes val stringResourceId: Int, @DrawableRes val imageResourceId: Int ){
 
 }
 
